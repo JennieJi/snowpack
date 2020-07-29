@@ -1,0 +1,29 @@
+{
+  "description": "Handle installOptions.namedExports",
+  "babelMacros": {
+    "twin": {
+      "config": "tailwind.config.js",
+      "preset": "emotion",
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
+  },
+  "scripts": {
+    "prepare": "node ../../packages/snowpack/pkg/dist-node/index.bin.js",
+    "TEST": "node ../../packages/snowpack/pkg/dist-node/index.bin.js dev"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "@snowpack/plugin-babel": "^1.4.0",
+    "babel-plugin-macros": "^2.8.0"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "twin.macro": "^1.5.1"
+  }
+}
